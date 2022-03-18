@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baptiste.P TERM</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+    <style>
+
+    body{
+        background-color: black;
+    }
+        .ascii_art{
+            font-family:monospace;
+            white-space: pre;
+            color :cyan;
+        }
+    </style>
+    </head>
+    <body>
+
+        <pre class="ascii_art">
+            
+      :::::::::      :::     ::::::::: ::::::::::: ::::::::::: :::::::: ::::::::::: ::::::::::     ::::::::: 
+      :+:    :+:   :+: :+:   :+:    :+:    :+:         :+:    :+:    :+:    :+:     :+:            :+:    :+: 
+     +:+    +:+  +:+   +:+  +:+    +:+    +:+         +:+    +:+           +:+     +:+            +:+    +:+  
+    +#++:++#+  +#++:++#++: +#++:++#+     +#+         +#+    +#++:++#++    +#+     +#++:++#       +#++:++#+    
+   +#+    +#+ +#+     +#+ +#+           +#+         +#+           +#+    +#+     +#+            +#+           
+  #+#    #+# #+#     #+# #+#           #+#         #+#    #+#    #+#    #+#     #+#        #+# #+#            
+ #########  ###     ### ###           ###     ########### ########     ###     ########## ### ###             
+        </pre>
+
+        <script>
+            $('body').terminal({
+                cv: function() {
+                    this.echo('\n[[;green;]Envoi du CV ...]');
+                    this.echo('\n')
+
+                    this.echo('  #@@@@@@@@@@@@@@@@@@@@@@@@@@@@      ');
+                    this.echo('@@@(                          @@@*   ');
+                    this.echo('@@@@@@@            .*%@@@@@@@@@@@@@@@');
+                    this.echo('@@@@@@@@@@@@@@@@@@@@@@%*           @@');
+                    this.echo('@@@@@@@@                           @@');
+                    this.echo('@@@@@@@@    @@@@@@@     /@@@@@     @@');
+                    this.echo('@@@@@@@@      @@@@@@@     (@@      @@');
+                    this.echo('@@@@@@@@      @@@@@@@@@   (@@      @@');
+                    this.echo('@@@@@@@@      @@@  @@@@@  (@@      @@');
+                    this.echo('@@@@@@@@      @@@   @@@@@@(@@      @@');
+                    this.echo('@@@@@@@@      @@@     @@@@@@@      @@');
+                    this.echo('%@@@@@@@      @@@      &@@@@@      @@');
+                    this.echo('  @@@@@@    @@@@&/        #        @@');
+                    this.echo('    @@@@                       /%@@@@');
+                    this.echo('      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@& ');
+
+                    this.echo('\n')
+                    this.echo('[[!;;;;https://www.notion.so/paqueriaud/CV-2da550c65c0e4a33adc48f1624cec2b1]Cliquez ici!\n]');
+                },
+                help: function() {
+                    this.echo('\n[[b;green;]Aide - Liste des commandes]\n')
+                    this.echo('1. help ................... Affiche ce menu');
+                    this.echo('2. cv ..................... Envoie le CV');
+                    this.echo('2. github ................. Envoie le GitHub');
+                    this.echo('3. make coffee ............ Fait du caf&eacute;');
+                    this.echo('\n');
+                },
+                github : function(){
+                    this.echo('\n[[;green;]Envoi du GitHub ...]');
+                    this.echo('\n');
+
+                    this.echo('           @@@@@@@@@@@@@@@@@@@          ');
+                    this.echo('       @@@@@@               @@@@@@      ');
+                    this.echo('     @@@@                       @@@@    ');
+                    this.echo('   @@@@   @@                 @@   @@@@  ');
+                    this.echo('  @@@     @@@@@@@@@@@@@@@@@@@@@    .@@@ ');
+                    this.echo(' @@@      @@@@@@@@@@@@@@@@@@@@@      @@@');
+                    this.echo(' @@@     @@@@@@@@@@@@@@@@@@@@@@@     @@@');
+                    this.echo('@@@@    @@@@@@@@@@@@@@@@@@@@@@@@@    @@@');
+                    this.echo(' @@@    *@@@@@@@@@@@@@@@@@@@@@@@@    @@@');
+                    this.echo(' @@@     @@@@@@@@@@@@@@@@@@@@@@@     @@@');
+                    this.echo('  @@@      @@@@@@@@@@@@@@@@@@@     *@@@ ');
+                    this.echo('   @@@@          @@@@@@@          @@@@  ');
+                    this.echo('     @@@@       @@@@@@@@@       @@@@    ');
+                    this.echo('       @@@@@@   @@@@@@@@@   @@@@@@      ');
+                    this.echo('           @@@@@@@@@@@@@@@@@@@          ');
+
+                    this.echo('\n');
+                    this.echo('[[!;;;;https://github.com/Hathek]Cliquez ici!\n]');
+                },
+                make : function(coffee){
+                    if(coffee == "coffee"){
+                    this.echo("\n")
+                    this.echo('             ;,\'');
+                    this.echo('     _o_    ;:;\'');
+                    this.echo(' ,-.\'---`.__ ;');
+                    this.echo('((j`=====\',-\'');
+                    this.echo(' `-\\     /');
+                    this.echo('    `-=-\'     ');
+                    this.echo('[[b;red;]Erreur 418 - Je suis une th&eacute;i&egrave;re!]\n');
+                    } else {
+                        this.echo(coffee + ' n\'est pas reconnu comme arguement!\n');
+                    }
+
+                }
+            },
+            
+            {
+                greetings: '[[b;teal;]Terminal] - [[b;grey;]Acc&egrave;s recrutement\n][[!;;;;http://baptiste.paqueriaud.fr]Cliquez ici pour afficher la page simplifi&eacute;e\n]\n\n[[b;grey;]Tapez] [[b;green;]help [[b;grey;]pour plus d\'info\n]'
+            })
+            </script>
+            
+    </body>
+</html>
